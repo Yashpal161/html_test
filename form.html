@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
+    <title>from</title>
 </head>
 <body>
-    <form action="/form.html">
-        <label for="email">username:</label> <input type="text"id="email" placeholder="email" required="true"><br>
-        <label for="user_password"> password:</label>
-       <input type="password" id="user_password"><br>
-       <label for="date">date:</label><input type="date" id="date"><br>
-       file:<input type="file"><br>
-       color:<input type="color"><br>
-       price range=<input type="range" ><br>
-        <input type="button" value="verify" name="verify">
-        <label for="male">male</label><input type="radio" id="male" name="gender" value="male">
-        <label for="female">female</label><input type="radio" id="female" name="gender" value="female">
-       
-        <input type="submit" value="submit" >
+    <form action="/submit.php" method="post">
+        <label for="username">username: </label>
+        <input type="text" id="username" placeholder="username" required="true"><br>
+        <label for="pass">password: </label><input type="password" id="pass" >   <br>
+        <label for="date">Date:</label><input type="date" id="date"><br>
+        <label for="file">file: </label><input type="file" name="file"><br>
+        <label for="col">colour: </label><input type="color"><br>
+        <label for="range">Price Range:</label><input type="range"><br>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">female:</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="other">other:</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+        <big>fruit:</big><br>
+        <label for="apple">apple:</label>
+        <input type="checkbox" id="apple" value="apple" name="fruit"><br>
+        <label for="banana">banana:</label>
+        <input type="checkbox" id="banana" value="banana" name="fruit"><br>
+        <label for="guava">guava:</label>
+        <input type="checkbox" id="guava" value="guava" name="fruit"><br>
+        <label for="litchi">litchi:</label>
+        <input type="checkbox" id="litchi" value="litchi" name="fruit"><br>
+        <label for="lang">choose a lang:</label>
+            <select id="lang" name="fruits">
+                <option value="hindi">hindi</option>
+                <option value="sanskrit">sanskrit</option>
+                <option value="english">english</option>
+                <option value="french">french</option>
+                <option value="punjabi">punjabi</option>
+
+            </select>
+        <br>
+        <textarea rows="5" cols="50">
+            
+            Text here
+
+        </textarea>
+        <label for="button">poke me: </label><input type="button"id="button" value="poked">
+        <input type="submit" >     
     </form>
 </body>
 </html>
